@@ -20,7 +20,7 @@ generateRoute({RouteSettings settings, Map<String, dynamic> map}) {
   if (map.isNotEmpty) {
     var entryList = map.entries.toList();
 
-    for (int i = 0; i <= map.length - 1; i += 1) {
+    for (int i = 0; i <= map.length; i += 1) {
       if (entryList[i].key == settings.name) {
         Widget child = entryList[i].value;
         return _getPageRoute(
