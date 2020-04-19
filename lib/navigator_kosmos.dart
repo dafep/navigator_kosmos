@@ -4,11 +4,11 @@ import 'package:flutter/material.dart';
 import 'package:page_transition/page_transition.dart';
 
 class NavigatorKosmos {
-  navigateTo({context, String route}) {
+  static navigateTo({context, String route}) {
     Navigator.pushNamed(context, route);
   }
 
-  initialRoute({RouteSettings settings, Map<String, dynamic> map}) {
+  static initialRoute({RouteSettings settings, Map<String, dynamic> map}) {
     return generateRoute(
       settings: settings,
       map: map,
