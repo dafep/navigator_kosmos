@@ -1,6 +1,10 @@
 import 'package:flutter/material.dart';
 import 'package:navigator_kosmos/navigator_kosmos.dart';
 
+import 'router/login.dart';
+import 'router/main.dart';
+import 'router/mainAppController.dart';
+
 Map<String, dynamic> routerMap = {
   "/": Main(),
   "/login": Login(),
